@@ -5,10 +5,10 @@ export default function About() {
     <section className="border-t border-ink/10 bg-mist py-16 md:py-24">
       <div className="mx-auto max-w-4xl px-6 text-center">
         <Reveal>
-          <p className="font-[family-name:var(--font-sora)] text-sm font-bold tracking-[0.25em] text-gold">
+          <p className="font-(family-name:--font-sora) text-sm font-bold tracking-[0.25em] text-gold">
             ABOUT ATHASH
           </p>
-          <h2 className="mt-4 font-[family-name:var(--font-sora)] text-3xl font-extrabold">
+          <h2 className="mt-4 font-(family-name:--font-sora) text-3xl font-extrabold">
             Built for South African businesses and institutions
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-slate">
@@ -25,3 +25,4 @@ export default function About() {
     </section>
   );
 }
+

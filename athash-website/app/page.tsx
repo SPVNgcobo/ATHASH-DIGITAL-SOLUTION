@@ -97,10 +97,10 @@ export default function Home() {
           <div className="pointer-events-none absolute -right-40 -top-40 h-96 w-96 rounded-full bg-linear-to-br from-gold/20 to-amber/10 blur-3xl" />
           <div className="grid gap-14 md:grid-cols-2 md:items-center">
             <div>
-              <p className="font-[family-name:var(--font-sora)] text-sm font-bold tracking-[0.25em] text-gold">
+              <p className="font-(family-name:--font-sora) text-sm font-bold tracking-[0.25em] text-gold">
                 BRAND. BUILD. TRANSFORM.
               </p>
-              <h1 className="mt-4 font-[family-name:var(--font-sora)] text-4xl font-extrabold leading-[1.05] sm:text-5xl md:text-6xl">
+              <h1 className="mt-4 font-(family-name:--font-sora) text-4xl font-extrabold leading-[1.05] sm:text-5xl md:text-6xl">
                 From idea to{" "}
                 <span className="gold-gradient-text">institution.</span>
               </h1>
@@ -154,7 +154,7 @@ export default function Home() {
               <p className="text-sm tracking-widest text-white/60">
                 ALL-IN-ONE SOLUTION
               </p>
-              <p className="mt-2 font-[family-name:var(--font-sora)] text-5xl font-extrabold text-gold">
+              <p className="mt-2 font-(family-name:--font-sora) text-5xl font-extrabold text-gold">
                 R4,999
               </p>
               <p className="text-sm text-white/50">ONCE-OFF</p>
@@ -185,7 +185,7 @@ export default function Home() {
             {valueProps.map((v, i) => (
               <Reveal key={v.title} delay={i * 100}>
                 <v.icon className="h-6 w-6 text-gold" strokeWidth={1.75} />
-                <p className="mt-3 font-[family-name:var(--font-sora)] font-bold">
+                <p className="mt-3 font-(family-name:--font-sora) font-bold">
                   {v.title}
                 </p>
                 <p className="mt-1 text-sm text-white/60">{v.desc}</p>
@@ -199,7 +199,7 @@ export default function Home() {
         {/* Solutions */}
         <section id="solutions" className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <Reveal>
-            <h2 className="text-center font-[family-name:var(--font-sora)] text-3xl font-extrabold">
+            <h2 className="text-center font-(family-name:--font-sora) text-3xl font-extrabold">
               Our Solutions
             </h2>
           </Reveal>
@@ -207,7 +207,7 @@ export default function Home() {
             {solutionGroups.map((group, i) => (
               <Reveal key={group.title} delay={i * 120}>
                 <div className="h-full rounded-3xl border border-ink/10 bg-mist p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-ink/5">
-                  <h3 className="font-[family-name:var(--font-sora)] font-bold text-gold">
+                  <h3 className="font-(family-name:--font-sora) font-bold text-gold">
                     {group.title}
                   </h3>
                   <ul className="mt-4 space-y-2.5 text-sm text-slate">
@@ -229,7 +229,7 @@ export default function Home() {
         <section className="border-t border-ink/10 bg-white py-16 md:py-24">
           <div className="mx-auto max-w-6xl px-6">
             <Reveal>
-              <h2 className="text-center font-[family-name:var(--font-sora)] text-3xl font-extrabold">
+              <h2 className="text-center font-(family-name:--font-sora) text-3xl font-extrabold">
                 Why Choose Athash?
               </h2>
             </Reveal>
@@ -245,7 +245,7 @@ export default function Home() {
                         strokeWidth={1.75}
                       />
                     </div>
-                    <p className="mt-4 font-[family-name:var(--font-sora)] font-bold">
+                    <p className="mt-4 font-(family-name:--font-sora) font-bold">
                       {w.title}
                     </p>
                     <p className="mt-1 text-sm text-slate">{w.desc}</p>
@@ -259,7 +259,7 @@ export default function Home() {
         {/* CTA */}
         <section className="bg-gold py-12">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 px-6 text-ink md:flex-row">
-            <p className="text-center font-[family-name:var(--font-sora)] text-xl font-extrabold sm:text-2xl">
+            <p className="text-center font-(family-name:--font-sora) text-xl font-extrabold sm:text-2xl">
               Message Us Today on WhatsApp
             </p>
             <a
@@ -276,3 +276,4 @@ export default function Home() {
     </>
   );
 }
+

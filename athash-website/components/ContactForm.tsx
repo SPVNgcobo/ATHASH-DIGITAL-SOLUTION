@@ -26,7 +26,7 @@ export default function ContactForm() {
     <section className="bg-gold/5 border-t border-ink/10 py-16 md:py-24" id="contact">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-[1.2fr_0.8fr] md:items-center">
         <div>
-          <p className="font-[family-name:var(--font-sora)] text-sm font-bold tracking-[0.25em] text-gold">
+          <p className="font-(family-name:--font-sora) text-sm font-bold tracking-[0.25em] text-gold">
             CONTACT ATHASH
           </p>
           <h2 className="mt-4 max-w-md text-3xl font-extrabold text-ink">
@@ -115,4 +115,5 @@ export default function ContactForm() {
     </section>
   );
 }
+
 

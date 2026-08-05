@@ -8,7 +8,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center gap-4">
-          <p className="font-[family-name:var(--font-sora)] font-semibold text-gold">
+          <p className="font-(family-name:--font-sora) font-semibold text-gold">
             Your Success Is Our Mission
           </p>
           <p className="max-w-xs text-center text-white/70 md:text-left">
@@ -89,3 +89,4 @@ export default function Footer() {
     </footer>
   );
 }
+

@@ -20,7 +20,7 @@ export default function Testimonials() {
     <section className="bg-ink py-16 text-white md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal>
-          <h2 className="text-center font-[family-name:var(--font-sora)] text-3xl font-extrabold">
+          <h2 className="text-center font-(family-name:--font-sora) text-3xl font-extrabold">
             What Clients Say
           </h2>
         </Reveal>
@@ -32,7 +32,7 @@ export default function Testimonials() {
                 <p className="mt-2 text-white/80 leading-relaxed">
                   {t.quote}
                 </p>
-                <p className="mt-6 font-[family-name:var(--font-sora)] font-bold">
+                <p className="mt-6 font-(family-name:--font-sora) font-bold">
                   {t.name}
                 </p>
                 <p className="text-sm text-white/50">{t.role}</p>
@@ -44,3 +44,4 @@ export default function Testimonials() {
     </section>
   );
 }
+
