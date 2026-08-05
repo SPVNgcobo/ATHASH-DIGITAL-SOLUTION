@@ -12,6 +12,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import About from "@/components/About";
+import ContactForm from "@/components/ContactForm";
 import Testimonials from "@/components/Testimonials";
 
 const pathSteps = ["Idea", "Brand", "Build", "Institution"];
@@ -93,7 +94,7 @@ export default function Home() {
       <main className="bg-paper text-ink">
         {/* Hero */}
         <section className="relative mx-auto max-w-6xl overflow-hidden px-6 py-14 md:py-28">
-          <div className="pointer-events-none absolute -right-40 -top-40 h-96 w-96 rounded-full bg-gradient-to-br from-gold/20 to-amber/10 blur-3xl" />
+          <div className="pointer-events-none absolute -right-40 -top-40 h-96 w-96 rounded-full bg-linear-to-br from-gold/20 to-amber/10 blur-3xl" />
           <div className="grid gap-14 md:grid-cols-2 md:items-center">
             <div>
               <p className="font-[family-name:var(--font-sora)] text-sm font-bold tracking-[0.25em] text-gold">
@@ -108,13 +109,24 @@ export default function Home() {
                 grow through branding, technology and digital systems.
               </p>
 
-              <a
-                href="https://wa.me/27795085651"
-                aria-label="Message Athash on WhatsApp"
-                className="gold-gradient mt-8 inline-block rounded-full px-7 py-3.5 font-semibold text-ink shadow-lg shadow-gold/25 transition hover:scale-[1.03] hover:shadow-xl hover:shadow-gold/30"
-              >
-                Message Us on WhatsApp
-              </a>
+              <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:items-center">
+                <a
+                  href="https://wa.me/27795085651"
+                  aria-label="Message Athash on WhatsApp"
+                  className="gold-gradient inline-flex rounded-full px-7 py-3.5 font-semibold text-ink shadow-lg shadow-gold/25 transition hover:scale-[1.03] hover:shadow-xl hover:shadow-gold/30"
+                >
+                  Message Us on WhatsApp
+                </a>
+                <a
+                  href="#solutions"
+                  className="inline-flex items-center justify-center rounded-full border border-ink/20 bg-white/95 px-6 py-3.5 text-sm font-semibold text-ink transition hover:bg-white"
+                >
+                  See Our Services
+                </a>
+              </div>
+              <p className="mt-4 max-w-md text-sm text-slate">
+                Fast, local support for South African founders and institutions.
+              </p>
 
               {/* Signature: Idea -> Institution path */}
               <div className="mt-14 flex flex-wrap items-center gap-y-4">
@@ -185,7 +197,7 @@ export default function Home() {
         <About />
 
         {/* Solutions */}
-        <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <section id="solutions" className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <Reveal>
             <h2 className="text-center font-[family-name:var(--font-sora)] text-3xl font-extrabold">
               Our Solutions
@@ -210,6 +222,8 @@ export default function Home() {
         </section>
 
         <Testimonials />
+
+        <ContactForm />
 
         {/* Why Choose Athash */}
         <section className="border-t border-ink/10 bg-white py-16 md:py-24">
